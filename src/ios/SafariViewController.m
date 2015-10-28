@@ -27,20 +27,4 @@
 
 # pragma mark - SFSafariViewControllerDelegate
 
-/*! @abstract Delegate callback called when the user taps the Done button.
-    Upon this call, the view controller is dismissed modally.
- */
-- (void) safariViewControllerDidFinish:(SFSafariViewController *)controller {
-  // could emit event to JS, but don't see the usecase yet - perhaps check InAppBrowser impl
-}
-
-/*! @abstract Invoked when the initial URL load is complete.
-    @param success YES if loading completed successfully, NO if loading failed.
-    @discussion This method is invoked when SFSafariViewController completes the loading of the URL that you pass
-    to its initializer. It is not invoked for any subsequent page loads in the same SFSafariViewController instance.
- */
-- (void) safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully {
-  // could emit event to JS, but don't see the usecase yet - perhaps check InAppBrowser impl
-}
-
 @end
